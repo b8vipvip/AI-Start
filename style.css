@@ -109,7 +109,7 @@ footer {
 	  }
 	/* 在视口宽度大于等于768px时，将h1元素的字体大小设置为5vw */
 	h1 {
-	  font-size: 5vw;
+	  font-size: 6vw;
 	}
 	
 	/* 在视口宽度大于等于768px时，将nav li元素的margin设置为1vw */
@@ -129,7 +129,7 @@ footer {
 	
 	/* 在视口宽度大于等于768px时，将li元素的字体大小设置为1vw */
 	li {
-	  font-size: 1vw;
+	  font-size: 2vw;
 	}
 	
 	/* 在视口宽度大于等于768px时，将.button元素的padding设置为1vw 2vw */
