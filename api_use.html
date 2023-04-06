@@ -29,21 +29,16 @@ body {
 }
 
 .content {
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
+    
+    
+    margin: 150px auto 30px auto;
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: rgba(0, 0, 0, 0.63);
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+
 
 h1 {
     text-align: center;
@@ -61,7 +56,7 @@ form {
 label {
     font-size: 24px;
     color: #ff089e;
-    margin-right: 10px;
+    margin-right: auto auto auto 12px;
 }
 
 input[type="text"] {
@@ -70,9 +65,10 @@ input[type="text"] {
     padding: 12px 16px;
     font-size: 16px;
     background-color: #f9f9f9;
-    margin-right: 10px;
+    margin: 10px 5px 10px 5px;
     flex: 1;
     transition: border-color 0.3s ease;
+    width: 350px;
 }
 
 input[type="text"]:focus {
@@ -160,13 +156,43 @@ button[type="submit"]:focus {
   from {background-image: linear-gradient(to right, #4299e5, #00c458);}
   to {background-image: linear-gradient(to right, #00c458, #4299e5);}
 }
+.bg-transparent .mx-auto .container .back {
+  display: flex;
+  align-items: center;
+  margin: 2rem auto auto 2rem;
+  
+}
+
+.bg-transparent .mx-auto .container .back svg:not(:root) {
+  fill: #fff;
+  overflow: hidden;
+  width: 1rem;
+  height: auto;
+}
+
+.bg-transparent .mx-auto .container .back span {
+  flex: 1;
+  font-size: 1rem;
+  color: #fff;
+  margin: auto 1rem auto 0.5rem;
+  width: 6rem;
+}
 
 </style>
 </head>
 <body class="bg-transparent font-sans">
+
     <div class="mx-auto max-w-7xl px-0">
+        
         <div class="container justify-center items-center">
+            <div class="back" onclick="location.href='./index.html'">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M267.5 440.6c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29V96c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4l-192 160L64 241V96c0-17.7-14.3-32-32-32S0 78.3 0 96V416c0 17.7 14.3 32 32 32s32-14.3 32-32V271l11.5 9.6 192 160z"/></svg>
+                  <!-- SVG 元素的代码 -->
+                </svg>
+                <span>返回</span>
+            </div>
             <div class="content">
+
                 <h1 class="text-3xl font-semibold text-center mb-8 text-gradient">OpenAI 余额查询</h1>
                 <form method="POST" onsubmit="event.preventDefault(); checkOpenAICredit();" class="flex items-center mb-10">
                     <label for="api_key" class="w-28 mr-4 text-gradient">API密钥:</label>

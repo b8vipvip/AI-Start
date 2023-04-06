@@ -26,30 +26,11 @@ body::before {
 }
 
 .content {
-  padding-top: 1rem;
+  padding-top: 2.6667rem;
   min-width: 20rem;
   max-width: 20rem;
   margin: auto auto 5rem auto;
   text-align: center;
-}
-.content .back {
-  display: flex;
-  align-items: center;
-  margin: auto auto 5rem auto;
-}
-
-.content .back svg:not(:root) {
-  fill: #fff;
-  overflow: hidden;
-  width: 1rem;
-  height: auto;
-}
-
-.content .back span {
-  flex: 1;
-  font-size: 1rem;
-  color: #fff;
-  margin: auto 16rem auto 0.5rem;
 }
 
 .content .box img {

@@ -26,7 +26,7 @@ body::before {
 }
 
 .content {
-  padding-top: 1rem;
+  padding-top: 2.6667rem;
   min-width: 20rem;
   max-width: 20rem;
   margin: auto auto 5rem auto;
@@ -52,6 +52,7 @@ body::before {
   margin: auto 16rem auto 0.5rem;
 }
 
+
 .content .box img {
   margin-top: 6rem;
   margin-bottom: auto;
@@ -74,12 +75,7 @@ body::before {
   font-size: 1.8rem;
   letter-spacing: 0.4rem;
 }
-.content .box h3 {
-  margin-bottom: 0.1rem;
-  margin-top: 0.2rem;
-  font-size: 0.8rem;
-  letter-spacing: 0.2rem;
-}
+
 .content .box .as {
   margin: 0.5rem auto;
 }
