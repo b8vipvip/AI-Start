@@ -35,11 +35,26 @@
                 <li><a href="https://liuzhou01.i-ai.top"  rel="noopener noreferrer">柳州1区</a></li>
                 <li><a href="https://nanning01.i-ai.top"  rel="noopener noreferrer">南宁1区</a></li>
             </ul>
+    
+            <script>
+                var li = document.querySelectorAll(".site li");
+                var ul = document.querySelector(".site");
+                var liWidth = li[0].offsetWidth;
+                var ulWidth = ul.offsetWidth;
+                var liNum = li.length;
+                var liMargin = (ulWidth - liWidth * liNum) / (liNum - 1);
+                for (var i = 0; i < li.length; i++) {
+                    li[i].style.marginLeft = liMargin + "px";
+                }
+
+</script>
+
             
+
 
         </div>
         <div class="as">
-            <img src="./wx.png" alt="二维码过期了">
+            <img src="./wx.png" alt="二维码过期了"></img>
             <p>AI玩家微信群</p>
             
         </div>
